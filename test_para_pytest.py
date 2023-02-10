@@ -24,7 +24,7 @@ def teardown_function():
 
 
 @pytest.mark.parametrize("username,password",
-                         [('ambreen2015@gmail.com', 'azam@iqbal.'), ('uzair@gmail.com', '1994')])
+                         [('ambreen2015@gmail.com', 'azam@iqbal.')])
 def test_login_details(username, password):
     print("My pytest login")
     driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div/section/form/div[1]/input').send_keys(username)
